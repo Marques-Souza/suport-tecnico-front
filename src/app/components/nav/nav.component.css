@@ -1,0 +1,33 @@
+.container{
+    height: 100%;
+}
+
+.sidenav {
+    width: 13rem;
+    background: linear-gradient(90deg, rgba(29,19,212,1) 0%, rgba(18,172,217,1) 100%, rgba(43,112,194,1) 100%);
+}
+
+.menu {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
+    border-radius: 18px;
+  }
+
+  img{
+    width: 100%;
+    height: 7rem;
+    margin: .8rem auto 1rem auto;
+  }
+
+  .sidenav a {
+    color: #ffffff;
+  }
+
+  .sidenav i {
+    margin-right: .6rem;
+  }
+
+  .menu {
+    margin: 1rem 0 0 1rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(29,19,212,1) 0%, rgba(18,172,217,1) 100%, rgba(43,112,194,1) 100%);
+  }
