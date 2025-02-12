@@ -1,0 +1,51 @@
+.container{
+    height: 100%;
+    background: linear-gradient(90deg, rgba(29,19,212,1) 0%, rgba(18,172,217,1) 100%, rgba(43,112,194,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form{
+    width: 25rem;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(0, 0, 0, 0.1),
+    -5px 5px 10px rgba(0, 0, 0, 0.1), 
+    5px -5px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #000000;
+}
+
+img{
+    height: 15rem;
+    width: 100%;
+    margin: 1.5rem auto 1.5rem auto;
+    
+    
+     
+}
+
+.full-width{
+    width: 100%;
+}
+
+.button{
+    margin-top: 1.5rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
+    
+}
+
