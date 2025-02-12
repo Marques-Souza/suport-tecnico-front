@@ -1,7 +1,9 @@
 .card{
     width: 90%;
-    margin: auto;
+    margin: 1rem auto;
     background-color: rgb(235, 235, 235);
+    box-shadow: 3px 7px 7px 3px rgba(0, 0, 0, 0.336);
+    border-radius: 2rem
 }
 
 img{
