@@ -33,3 +33,7 @@ button{
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
     margin-bottom: .5rem;
 }
+
+mat-icon{
+    opacity: .8;
+}

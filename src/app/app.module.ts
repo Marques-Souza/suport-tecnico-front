@@ -28,6 +28,8 @@ import{MatIconModule} from '@angular/material/icon';
 import{MatListModule} from '@angular/material/list';
 import{MatCardModule} from '@angular/material/card';
 
+
+
 //Components do Projeto
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
@@ -37,6 +39,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './intercerptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 @NgModule({
@@ -71,11 +74,13 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     MatIconModule,
     MatListModule,
     MatCardModule,
+    NgxMaskModule.forRoot(),
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
       progressBar: true
-    })
+    }),
+   
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
