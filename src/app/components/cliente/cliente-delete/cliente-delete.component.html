@@ -1,37 +1,37 @@
 <div class="container">
     <form class="form">
 
-        <h1 class="fullWidth">Deletar Técnico</h1>
-        <img class="fullWidth" src="assets/img/tecnico-create.svg" alt="Imagem de cadastro de Tecnico">
+        <h1 class="fullWidth">Deletar Cliente</h1>
+        <img class="fullWidth" src="assets/img/tecnico-create.svg" alt="Imagem de cadastro de Cliente">
 
         <section class="section">
             <mat-checkbox [disabled]="true" class="margin" color="primary">Admin</mat-checkbox>
-            <mat-checkbox [disabled]="true" class="margin" color="primary">Técnico</mat-checkbox>
+            <mat-checkbox [disabled]="true" class="margin" color="primary">Cliente</mat-checkbox>
             <mat-checkbox [disabled]="true" class="margin" color="primary">Cliente</mat-checkbox>
         </section>
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Nome</mat-label>
-            <input [(ngModel)]="tecnico.nome" name="nome" [disabled]="true" matInput>
+            <input [(ngModel)]="cliente.nome" name="nome" [disabled]="true" matInput>
             <mat-icon matSuffix>person</mat-icon>
         </mat-form-field>
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>CPF</mat-label>
-            <input [(ngModel)]="tecnico.cpf" name="cpf" [disabled]="true" matInput>
+            <input [(ngModel)]="cliente.cpf" name="cpf" [disabled]="true" matInput>
             <mat-icon matSuffix>pin</mat-icon>
 
         </mat-form-field>
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>E-mail</mat-label>
-            <input [(ngModel)]="tecnico.email" name="email" [disabled]="true" matInput type="password">
+            <input [(ngModel)]="cliente.email" name="email" [disabled]="true" matInput type="password">
             <mat-icon matSuffix>mail</mat-icon>
         </mat-form-field>
 
         <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Senha</mat-label>
-            <input [(ngModel)]="tecnico.senha" name="senha" [disabled]="true" matInput>
+            <input [(ngModel)]="cliente.senha" name="senha" [disabled]="true" matInput>
             <mat-icon matSuffix>lock</mat-icon>
         </mat-form-field>
 
