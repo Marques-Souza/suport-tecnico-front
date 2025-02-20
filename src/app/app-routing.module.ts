@@ -9,6 +9,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 
+
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
 
@@ -20,6 +21,7 @@ const routes: Routes = [
     {path: 'tecnicos/create', component: TecnicoCreateComponent},
     {path: 'tecnicos/update/:id', component: TecnicoUpdateComponent},
     {path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent}
+
   ]}
 ];
 
