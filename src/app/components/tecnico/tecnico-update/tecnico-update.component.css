@@ -1,0 +1,39 @@
+.container{
+    width: 28rem;
+    margin:auto;
+    padding: 1rem 1rem  1rem;
+    border-radius: .6rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3),  
+                0px -5px 10px rgba(0, 0, 0, 0.1),  
+                5px 0px 10px rgba(0, 0, 0, 0.2),  
+                -5px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    height: 7rem;
+    margin: auto;
+}
+
+.section{
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    margin-top: .6rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
+    margin-bottom: .5rem;
+}
+
+mat-icon{
+    opacity: .8;
+}
