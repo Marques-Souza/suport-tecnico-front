@@ -13,11 +13,11 @@ export class ChamadoListComponent implements OnInit {
 
   ELEMENT_DATA: Chamado[] = []
   FILTERED_DATA: Chamado[] = []
-  
-    displayedColumns: string[] = ['id', 'titulo', 'cliente', 'tecnico', 'dataAbertura', 'prioridade', 'status', 'acoes'];
-    dataSource = new MatTableDataSource<Chamado>(this.ELEMENT_DATA);
-  
-    @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  displayedColumns: string[] = ['id', 'titulo', 'cliente', 'tecnico', 'dataAbertura', 'prioridade', 'status', 'acoes'];
+  dataSource = new MatTableDataSource<Chamado>(this.ELEMENT_DATA);
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   constructor(private service: ChamadoService) { }
 
@@ -25,18 +25,18 @@ export class ChamadoListComponent implements OnInit {
     this.findAll();
   }
 
-  findAll(): void{
+  findAll(): void {
     this.service.findAll().subscribe(resposta => {
       this.ELEMENT_DATA = resposta
       this.dataSource = new MatTableDataSource<Chamado>(this.ELEMENT_DATA);
       this.dataSource.paginator = this.paginator;
-   
+
     })
   }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
-   
+
   }
 
   retornaStatus(status: any): string {
@@ -60,17 +60,15 @@ export class ChamadoListComponent implements OnInit {
     }
   }
 
-  ordernByStatus(status: any): void{
+  ordernByStatus(status: any): void {
     let list: Chamado[] = [];
     this.ELEMENT_DATA.forEach(element => {
-      if(element.status == status)
+      if (element.status == status)
         list.push(element)
     });
     this.FILTERED_DATA = list;
     this.dataSource = new MatTableDataSource<Chamado>(this.FILTERED_DATA);
     this.dataSource.paginator = this.paginator;
   }
-
-
 
 }
