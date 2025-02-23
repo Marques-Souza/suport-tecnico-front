@@ -1,10 +1,10 @@
 <div class="container">
-    <h1>Lista Chamados</h1>
+    <h1>Lista chamados</h1>
     <button routerLink="create" mat-stroked-button>Novo Chamado</button>
 
     <mat-form-field>
         <mat-label>Pesquisar</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. fulano..." #input>
     </mat-form-field>
 
     <mat-radio-group color="primary">
